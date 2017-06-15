@@ -21,6 +21,7 @@
       height: auto;
       line-height: 2.5em;
       font-size: 2em;
+      text-align: center;
       border-radius: 0;
       border: none;
       outline: none;
@@ -28,10 +29,6 @@
       background-color: transparent;
       background-color: rgba(50, 200, 0, 0.5);
       transition: all 0.25s ease-out;
-    }
-    .btn {
-      bottom: -50px;
-      left: 0;
     }
     .btn:active,
     .btn:focus,
