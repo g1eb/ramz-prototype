@@ -9,4 +9,34 @@
   height: 50vh;
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(50, 50, 50, 0.5);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    color: #111;
+
+    .btn {
+      height: auto;
+      line-height: 2.5em;
+      font-size: 2em;
+      border-radius: 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: transparent;
+      background-color: rgba(50, 200, 0, 0.5);
+      transition: all 0.25s ease-out;
+    }
+    .btn {
+      bottom: -50px;
+      left: 0;
+    }
+    .btn:active,
+    .btn:focus,
+    .btn:hover {
+      opacity: 0.5;
+    }
+  }
 }
