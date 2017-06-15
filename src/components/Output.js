@@ -6,7 +6,10 @@ class Output extends React.Component {
   render() {
     return (
       <div className='output'>
-        <h1>output component</h1>
+        <div className='container'>
+          <h1>hello</h1>
+          <h1>what is your name?</h1>
+        </div>
       </div>
     )
   }

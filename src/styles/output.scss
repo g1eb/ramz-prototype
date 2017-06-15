@@ -9,4 +9,12 @@
   height: 20vh;
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(50, 50, 50, 0.5);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    color: #111;
+  }
 }
