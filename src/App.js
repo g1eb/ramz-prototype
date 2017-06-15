@@ -13,7 +13,8 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      agreement: false,
+      'agreement': false,
+      'animation': false,
     }
   }
 
@@ -23,13 +24,34 @@ class App extends React.Component {
     })
   }
 
+  play() {
+    this.setState({
+      'animation': true,
+    })
+    window.setTimeout(() => {
+      this.setState({
+        'animation': false,
+      })
+    }, 1000)
+  }
+
+  getControls() {
+    if ( !this.state.animation ) {
+      return (
+        <div>
+          <Input />
+          <Output />
+        </div>
+      )
+    }
+  }
+
   getView() {
     if ( this.state.agreement ) {
       return (
         <div>
-          <Chef />
-          <Input />
-          <Output />
+          <Chef isCooking={this.state.animation} cook={this.play.bind(this)} />
+          {this.getControls()}
         </div>
       )
     } else {
