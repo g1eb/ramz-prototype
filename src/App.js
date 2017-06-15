@@ -1,11 +1,18 @@
 import React from 'react'
 import Background from './components/Background'
+import Output from './components/Output'
+import Input from './components/Input'
+
 import './styles/app.css'
 
 class App extends React.Component {
   render() {
     return (
-      <Background />
+      <div>
+        <Input />
+        <Output />
+        <Background />
+      </div>
     );
   }
 }
