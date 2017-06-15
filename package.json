@@ -2,6 +2,7 @@
   "name": "ramc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://g1eb.github.io/ramc",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
